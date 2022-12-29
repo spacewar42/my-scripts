@@ -1,0 +1,6 @@
+import re
+text = "https://music.163.com/song?id=346576&userid=9494949"
+regex = re.compile(r"userid=\d+")
+replacement = "19890604"
+new = regex.sub(replacement, text)
+print(new)
